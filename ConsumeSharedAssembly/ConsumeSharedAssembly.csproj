@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="SharedClassLibrary">
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\SharedClassLibrary\v4.0_1.0.0.0__e3b257a49735db36\SharedClassLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

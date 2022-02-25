@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClculatorLibary", "Clculato
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorConsole", "CalculatorConsole\CalculatorConsole.csproj", "{9D4E3228-A941-4C28-AE89-E56630102788}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedClassLibrary", "SharedClassLibrary\SharedClassLibrary.csproj", "{A2C09F08-40B6-4D74-8192-318E032B93FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumeSharedAssembly", "ConsumeSharedAssembly\ConsumeSharedAssembly.csproj", "{EB058C18-346F-4558-90E8-AD126625322C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,14 @@ Global
 		{9D4E3228-A941-4C28-AE89-E56630102788}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D4E3228-A941-4C28-AE89-E56630102788}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D4E3228-A941-4C28-AE89-E56630102788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C09F08-40B6-4D74-8192-318E032B93FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C09F08-40B6-4D74-8192-318E032B93FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C09F08-40B6-4D74-8192-318E032B93FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C09F08-40B6-4D74-8192-318E032B93FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB058C18-346F-4558-90E8-AD126625322C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB058C18-346F-4558-90E8-AD126625322C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB058C18-346F-4558-90E8-AD126625322C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB058C18-346F-4558-90E8-AD126625322C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

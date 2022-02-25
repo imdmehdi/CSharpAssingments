@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Linq;
 
-namespace ClculatorLibary
+namespace SharedClassLibrary
 {
-    public  class Calculator : ICalculator
+    public class Calculator : ICalculator
     {
-       
+
         double ICalculator.Add(double firstNumber, double secondNumber)
         {
             try
@@ -17,7 +16,7 @@ namespace ClculatorLibary
 
                 throw;
             }
-           
+
         }
         public void DoWok()
         {
@@ -40,7 +39,7 @@ namespace ClculatorLibary
         {
             try
             {
-                
+
                 return firstNumber * secondNumber;
             }
             catch (Exception)
@@ -54,7 +53,7 @@ namespace ClculatorLibary
         {
             try
             {
-                
+
                 return firstNumber - secondNumber;
 
             }
@@ -69,7 +68,7 @@ namespace ClculatorLibary
     public interface ICalculator
     {
         public double Add(double firstNumber, double secondNumber);
-        public  double Substract(double firstNumber, double secondNumber);
+        public double Substract(double firstNumber, double secondNumber);
         public double Multiply(double firstNumber, double secondNumber);
         public double Divide(double firstNumber, double secondNumber);
 
