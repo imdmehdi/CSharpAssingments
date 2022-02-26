@@ -1,13 +1,20 @@
-﻿using SharedClassLibrary;
+﻿extern alias newV;
+extern alias oldV;
+using oldV::SharedClassLibrary;
+using newV::SharedClassLibrary;
+
 using System;
 
 namespace ConsumeSharedAssembly
 {
     internal class Program
     {
+        //used gacutil.exe -i SharedClassLibrary.dll for installatin in gac. Manual change of version  before build.
         static void Main(string[] args)
         {
-            ICalculator calculator = new Calculator();
+            oldV.SharedClassLibrary.ICalculator calculator = new oldV.SharedClassLibrary.Calculator();
+            newV.SharedClassLibrary.ICalculator calculatorNew = new newV.SharedClassLibrary.Calculator();
+
 
             Console.WriteLine("Enter the action to be performed");
             Console.WriteLine("Press 1 for Addition");
@@ -34,12 +41,12 @@ namespace ConsumeSharedAssembly
                     }
                 case 3:
                     {
-                        result = calculator.Multiply(input_1, input_2);
+                       result = calculatorNew.Multiply(input_1, input_2);
                         break;
                     }
                 case 4:
                     {
-                        result = calculator.Divide(input_1, input_2);
+                        //result = calculator.Divide(input_1, input_2);
                         break;
                     }
                 default:
